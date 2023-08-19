@@ -1,0 +1,93 @@
+html{
+    background: linear-gradient(90deg, rgb(63, 65, 185) 5%, rgb(128, 50, 26) 70%);
+    background-repeat: no-repeat;
+    min-height: 100%;
+    min-width: auto;
+    width: 100%;
+    height: auto;
+    font-family: 'Karla', sans-serif;
+}
+#navbar-menu{
+    display: flex;
+    justify-content: center;
+}
+
+h1{
+    color: white;
+}
+
+#logo-img{
+    border-radius: 50%;
+    transition: 2000ms all ease-in-out;
+}
+
+#logo-img:hover{
+    transform: rotate(360deg);
+    transition: 1000ms all ease-in-out;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#audio-dropdown{
+    appearance: none;
+    outline: 0;
+    border: 0;
+    box-shadow: none;
+    flex: 1;
+    padding: 0 0.5em;
+    color: #fff;
+    background-color: rgb(106, 107, 175);
+    background-image: none;
+    cursor: pointer;
+}
+
+.select {
+    position: relative;
+    display: flex;
+    width: 15rem;
+    height: 3em;
+    border-radius: .25em;
+    overflow: hidden;
+  }
+
+.select::after {
+    content: '\25BC';
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 1em;
+    background-color: #34495e;
+    transition: .25s all ease;
+    pointer-events: none;
+}
+
+.select:hover::after {
+    color: #f39c12;
+}
+
+#span-click {
+    background: url(../svg/play-button.svg) no-repeat top left;
+    cursor: pointer;
+    display: inline-block;
+    margin-top: 2rem;
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+}
+
+p {
+    margin: 10px 0;
+    padding: 5px;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+a {
+    color : white;
+}
